@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Hunt Them Down!</title>
+        <meta charset = "utf-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1, user-scalable = yes">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="images/gun-icon.jpg">
+
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+        
+    </head>
+
+    <body>
+        <div id="heading">
+            <p>SLASH AS MANY AS YOU CAN!</p>
+        </div>
+        <div id="container">
+            <div id="innercontainer">
+                <div id="lives">
+                    <div class="life" id="life1">
+                        <img src="images/heart-lives.png">
+                    </div>
+                    <div class="life" id="life2">
+                        <img src="images/heart-lives.png">
+                    </div>
+                    <div class="life" id="life3">
+                        <img src="images/heart-lives.png">
+                    </div>
+                </div>
+                <div id="timeremaining">
+                    <p>Time remaining: <span id="showTime">60</span>s</p>
+                </div>
+                <div id="score">
+                    <p>Score: 0</p>
+                </div>
+            </div>
+
+            <div id="playarea">
+                <div id="box">
+                    <!-- <img src="people1.jpeg"> -->
+                </div>
+            </div>
+            <div id="contain2">
+                <div id="instruction">
+                    Instruction
+                </div>
+                <div id="startgame">
+                    Start Game
+                </div>
+            </div>
+
+            <div id="dialog-ins" title="Instruction">
+                Swipe on the characters on the screen. Each swipe gives you a point. The game ends when the timer runs out or you lose 3 lives.
+            </div>
+            
+            <div id="gameover">
+                <p>GAME OVER!</p>
+                <p>Your score is: <span id="showscore"></span></p>
+                <p id="gamemessage"></p>
+            </div>
+        </div>
+
+        <div id="foot">
+            <div id="footerself">
+                &copy; Copyright. All rights reserved.
+            </div>
+            <div id="footerself2">
+                Developed by <span id="self"><b>Subham Das</b></span>
+            </div>
+        </div>
+
+        <audio id="playsound">
+            <source src="Audio/man-dying.mp3"></source>
+            <source src="Audio/man-dying.ogg"></source>
+        </audio>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="jscode.js"></script>
+    </body>
+</html>
