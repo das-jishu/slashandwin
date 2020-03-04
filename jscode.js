@@ -172,7 +172,16 @@ $(document).ready(function() {
         document.getElementById("playsound").play();
         $("#box").hide("explode", 200);
         clearInterval(action2);
-        setTimeout(generateBoxes, 300);
+        setTimeout(generateBoxes, 350);
+    });
+    
+    $("#box").click(function() {
+        score++;
+        $("#score").html("<p>Score: "+score+"</p>");
+        document.getElementById("playsound").play();
+        $("#box").hide("explode", 200);
+        clearInterval(action2);
+        setTimeout(generateBoxes, 350);
     });
 
 });
